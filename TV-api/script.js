@@ -5,7 +5,7 @@ outerDiv.classList.add("outerDiv");
 search_button.addEventListener("click", (event)=>{
     event.preventDefault();
     let value = searchItem.value;
-    let api = `http://api.tvmaze.com/search/shows?q=${value}`
+    let api = `https://api.tvmaze.com/search/shows?q=${value}`
     outerDiv.innerHTML = "";
     async function seriesDetails() {
         let response = await fetch(api);
